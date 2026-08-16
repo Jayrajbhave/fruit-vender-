@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBite Fruits-- Online store for the fruits</title>
+    <link href="./output.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-emerald-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-8 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap items-center justify-between">
+            <!-- Logo/Site Name -->
+            <a href="index.html" class="text-3xl font-extrabold text-emerald-600 hover:text-emerald-700 transition-colors duration-300">
+                FreshBite Fruits
+            </a>
+
+            <!-- Navigation Links (Hidden on small screens, shown as menu button) -->
+            <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-lg font-medium">
+                <a href="#" class="text-gray-700 hover:text-emerald-600 transition-colors duration-200 py-1 px-2 rounded-md">Home</a>
+                <a href="#products" class="text-gray-700 hover:text-emerald-600 transition-colors duration-200 py-1 px-2 rounded-md">Shop Fruits</a>
+                <div class="relative group">
+                    <button class="text-gray-700 hover:text-emerald-600 transition-colors duration-200 py-1 px-2 rounded-md">
+                        Categories <i class="fa-solid fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-40 z-10">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-t-md">Tropical Fruits</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Berries</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Citrus Fruits</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-b-md">Exotic Selection</a>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-700 hover:text-emerald-600 transition-colors duration-200 py-1 px-2 rounded-md">About Us</a>
+                <a href="#" class="text-gray-700 hover:text-emerald-600 transition-colors duration-200 py-1 px-2 rounded-md">Contact</a>
+            </nav>
+
+            <!-- Right-aligned Icons (Search, User, Cart) -->
+            <div class="flex items-center space-x-4 lg:space-x-6">
+                <!-- Search Icon with Overlay/Modal placeholder -->
+                <button class="text-gray-700 hover:text-emerald-600 transition-colors duration-200 text-xl" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <!-- User/Account Icon -->
+                <a href="login_id.html" class="text-gray-700 hover:text-emerald-600 transition-colors duration-200 text-xl" aria-label="My Account">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <!-- Shopping Cart Icon with Badge -->
+                <a href="cart_now.html" class="relative text-gray-700 hover:text-emerald-600 transition-colors duration-200 text-xl" aria-label="Shopping Cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center border-2 border-white">6</span>
+                </a>
+                <!-- Mobile Menu Button (Hamburger) -->
+                <button class="md:hidden text-gray-700 hover:text-emerald-600 transition-colors duration-200 text-2xl" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-emerald-500 to-lime-600 text-white py-20 md:py-32 px-6 md:px-8 overflow-hidden rounded-bl-[100px] rounded-tr-[100px] my-8 shadow-xl mx-auto max-w-7xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between z-10 relative">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                    Farm-Fresh Fruits <br class="hidden md:inline"> Delivered to Your Door!
+                </h1>
+                <p class="text-lg md:text-xl leading-relaxed mb-8 opacity-90 animate-fade-in-up">
+                    Sourced directly from local farms, our fruits are packed with flavor and nutrients.
+                    Experience true freshness today.
+                </p>
+                <a href="#products" class="inline-block bg-white text-emerald-700 font-bold text-xl px-10 py-4 rounded-full shadow-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 transform animate-fade-in-left">
+                    Shop Now
+                    <i class="fa-solid fa-leaf ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end animate-fade-in-right">
+                <!-- Placeholder image for hero section - fruit basket -->
+                <img src="https://i.pinimg.com/736x/76/e4/1d/76e41daef8b51acc0a9f8696b62a2499.jpg" alt="Fruit Basket" class="w-[300px] h-[300px] md:w-[450px] md:h-[450px] object-cover rounded-full shadow-2xl border-4 border-white transform hover:scale-105 transition-transform duration-300">
+            </div>
+        </div>
+        <!-- Abstract shapes for background visual interest -->
+        <div class="absolute top-0 left-0 w-40 h-40 bg-white opacity-10 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-60 h-60 bg-white opacity-10 rounded-full transform translate-x-1/2 translate-y-1/2"></div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section id="products" class="py-16 px-6 md:px-8 bg-white shadow-inner rounded-xl mx-auto max-w-7xl mb-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Farm-Fresh Selection</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Product Card 1: Organic Apples -->
+                <div class="bg-emerald-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col justify-between">
+                    <a href="#" class="block">
+                        <img src="https://th.bing.com/th/id/OIP.u5MHxlzrO8CkZr9HvC8TGQHaFj?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Organic Apples" class="w-full h-48 object-cover rounded-t-xl hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 truncate">Organic Gala Apples (1kg)</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-grow">Crisp, sweet, and organically grown. Perfect for snacking or baking.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-emerald-600">200 RS</span>
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="text-gray-500 text-sm ml-2">(4.0)</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                            Add to Cart <i class="fa-solid fa-basket-shopping ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Sweet Mangoes -->
+                <div class="bg-emerald-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col justify-between">
+                    <a href="#" class="block">
+                        <img src="https://cdn.siasat.com/wp-content/uploads/2020/05/mango-.jpg" alt="Sweet Mangoes" class="w-full h-48 object-cover rounded-t-xl hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 truncate">Alphonso Mangoes (Set of 3)</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-grow">Juicy, aromatic, and perfectly ripe. A taste of summer in every bite.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-emerald-600">500 RS</span>
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <span class="text-gray-500 text-sm ml-2">(4.5)</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                            Add to Cart <i class="fa-solid fa-basket-shopping ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Fresh Strawberries -->
+                <div class="bg-emerald-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col justify-between">
+                    <a href="#" class="block">
+                        <img src="https://img.freepik.com/premium-photo/berry-bliss-juicy-symphony-fresh-strawberries_984027-56680.jpg" alt="Fresh Strawberries" class="w-full h-48 object-cover rounded-t-xl hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 truncate">Fresh Strawberries (250g punnet)</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-grow">Sweet and plump, hand-picked for peak freshness. Great for desserts!</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-emerald-600">150 RS</span>
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-gray-500 text-sm ml-2">(5.0)</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                            Add to Cart <i class="fa-solid fa-basket-shopping ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4: Juicy Oranges -->
+                <div class="bg-emerald-50 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col justify-between">
+                    <a href="#" class="block">
+                        <img src="https://media.altphotos.com/cache/images/2017/09/09/17/x800/fruits-oranges-.jpg" alt="Juicy Oranges" class="w-full h-48 object-cover rounded-t-xl hover:scale-105 transition-transform duration-300">
+                    </a>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2 truncate">Navel Oranges (1kg Bag)</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-grow">Bursting with Vitamin C, perfect for juice or a healthy snack.</p>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-2xl font-bold text-emerald-600">250 RS</span>
+                            <div class="flex items-center text-yellow-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <span class="text-gray-500 text-sm ml-2">(3.5)</span>
+                            </div>
+                        </div>
+                        <button class="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-300 shadow-md hover:shadow-lg">
+                            Add to Cart <i class="fa-solid fa-basket-shopping ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="py-16 px-6 md:px-8 bg-emerald-100 rounded-xl mx-auto max-w-7xl mb-12 shadow-md">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-emerald-800 mb-12">Browse By Fruit Type</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Category Card 1 -->
+                <a href="#" class="block bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center">
+                    <img src="https://i.pinimg.com/736x/ff/13/a3/ff13a3c0b82ebb5ffdd273281ac7b86f.jpg" alt="Berries" class="mx-auto mb-4 w-24 h-24 object-contain rounded-full bg-red-100 p-2">
+                    <h3 class="text-xl font-semibold text-gray-900">Berries</h3>
+                </a>
+                <!-- Category Card 2 -->
+                <a href="#" class="block bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center">
+                    <img src="https://i.pinimg.com/736x/52/63/a7/5263a7a4ca078ee09af8f3f675d02b49.jpg" alt="Citrus Fruits" class="mx-auto mb-4 w-24 h-24 object-contain rounded-full bg-yellow-100 p-2">
+                    <h3 class="text-xl font-semibold text-gray-900">Citrus Fruits</h3>
+                </a>
+                <!-- Category Card 3 -->
+                <a href="#" class="block bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center">
+                    <img src="https://wallpaperaccess.com/full/1466446.jpg" alt="Tropical Fruits" class="mx-auto mb-4 w-24 h-24 object-contain rounded-full bg-purple-100 p-2">
+                    <h3 class="text-xl font-semibold text-gray-900">Tropical Fruits</h3>
+                </a>
+                <!-- Category Card 4 -->
+                <a href="#" class="block bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 text-center">
+                    <img src="https://th.bing.com/th/id/OIP.ZCHxDun9lHxnstzT0fzGMgHaEK?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3" alt="Exotic Fruits" class="mx-auto mb-4 w-24 h-24 object-contain rounded-full bg-cyan-100 p-2">
+                    <h3 class="text-xl font-semibold text-gray-900">Exotic Selection</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Newsletter Section -->
+    <section class="bg-emerald-700 text-white py-16 px-6 md:px-8 text-center mx-auto max-w-7xl rounded-xl shadow-xl mb-12">
+        <h2 class="text-4xl font-bold mb-4">Get Weekly Fresh Deals!</h2>
+        <p class="text-lg mb-8 opacity-90">Sign up for our newsletter to receive exclusive discounts and updates on seasonal arrivals.</p>
+        <form class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-lg mx-auto">
+            <input
+                type="email"
+                placeholder="Enter your email address"
+                class="w-full sm:flex-grow p-4 rounded-lg border-2 border-white focus:outline-none focus:border-emerald-300 text-gray-900 text-lg"
+                aria-label="Email for Newsletter"
+            >
+            <button
+                type="submit"
+                class="w-full sm:w-auto bg-white text-emerald-700 font-bold text-lg py-4 px-8 rounded-lg hover:bg-gray-100 hover:scale-105 transition-all duration-300 shadow-md"
+            >
+                Subscribe
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 md:px-8 rounded-t-xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">FreshBite Fruits</h3>
+                <p class="text-sm leading-relaxed">Your daily dose of natural goodness. We deliver the freshest fruits right from our farms to your table.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">Our Story</a></li>
+                    <li><a href="#products" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">Shop All Fruits</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">Seasonal Picks</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Service -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Help & Support</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">Delivery Information</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">FAQs</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-emerald-500 transition-colors duration-200">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social -->
+            <div>
+                <h3 class="text-xl font-bold text-white mb-4">Connect With Us</h3>
+                <p class="text-sm">Email: <a href="mailto:info@freshbite.com" class="text-emerald-400 hover:underline">info@freshbite.com</a></p>
+                <p class="text-sm">Phone: <a href="tel:+1234567890" class="text-emerald-400 hover:underline">+91 987412365</a></p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 text-2xl transition-colors duration-200" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 text-2xl transition-colors duration-200" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 text-2xl transition-colors duration-200" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-emerald-500 text-2xl transition-colors duration-200" aria-label="Pinterest"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-500">
+            &copy; 2025 FreshBite Fruits. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
