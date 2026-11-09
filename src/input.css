@@ -1,5 +1,28 @@
 @import "tailwindcss";
 @theme {
-  --font-*:initial; 
-  --font-sans:"Roboto";
+  --font-*:initial;
+  --font-sans: "Roboto", sans-serif;
+  --font-display: "Poppins", sans-serif;
+  --font-ui: "Montserrat", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+  }
+
+  nav,
+  button,
+  label {
+    font-family: var(--font-ui);
+  }
 }

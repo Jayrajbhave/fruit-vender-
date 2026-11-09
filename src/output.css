@@ -7,7 +7,6 @@
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-700: oklch(50.5% 0.213 27.518);
-    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-yellow-100: oklch(97.3% 0.071 103.193);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-lime-600: oklch(64.8% 0.2 131.684);
@@ -75,7 +74,9 @@
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
-    --font-sans: "Roboto";
+    --font-sans: "Roboto", sans-serif;
+    --font-display: "Poppins", sans-serif;
+    --font-ui: "Montserrat", sans-serif;
   }
 }
 @layer base {
@@ -1200,6 +1201,17 @@
     @media (width >= 80rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+  }
+}
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+  nav, button, label {
+    font-family: var(--font-ui);
   }
 }
 @property --tw-translate-x {
